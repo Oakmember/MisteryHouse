@@ -10,14 +10,24 @@ public class HandDirectInteractor : MonoBehaviour
 
     //Stores what kind of characteristics we're looking for with our Input Device when we search for it later
     public InputDeviceCharacteristics inputDeviceCharacteristics;
-
+    //CUSTOM
+    //Allows for hiding of hand prefab if set to true
+    public bool hideHandOnSelect = false;
 
     //Stores the InputDevice that we're Targeting once we find it in InitializeHand()
     private InputDevice _targetDevice;
     private Animator _handAnimator;
+    //CUSTOM
+    private SkinnedMeshRenderer _handMesh;
 
-
-
+    //CUSTOM
+    public void HideHandOnSelect()
+    {
+        if (hideHandOnSelect)
+        {
+            _handMesh.enabled = !_handMesh.enabled;
+        }
+    }
 
     private void Start()
     {
@@ -39,7 +49,8 @@ public class HandDirectInteractor : MonoBehaviour
 
             GameObject spawnedHand = Instantiate(handPrefab, transform);
             _handAnimator = spawnedHand.GetComponent<Animator>();
-
+            //CUSTOM
+            _handMesh = spawnedHand.GetComponentInChildren<SkinnedMeshRenderer>();
         }
     }
 
