@@ -11355,6 +11355,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100339863849279426, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4451388176466237080, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
       propertyPath: m_HDR
       value: 1
@@ -18968,9 +18972,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3124988151702971186, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3124988151702971189, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
       propertyPath: m_Name
       value: Locomotion System
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124988151702971198, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
