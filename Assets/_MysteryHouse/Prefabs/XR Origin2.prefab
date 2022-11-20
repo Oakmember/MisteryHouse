@@ -858,7 +858,8 @@ GameObject:
   - component: {fileID: 103190754942474821}
   - component: {fileID: 103190754942474826}
   - component: {fileID: 4596292483907477467}
-  m_Layer: 0
+  - component: {fileID: 8595634830865658836}
+  m_Layer: 9
   m_Name: XR Origin2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -911,7 +912,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.3
+  m_Radius: 0.1
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -945,6 +946,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTeleport: 1
+  locomotionSystem: {fileID: 4596292482276000640}
+  leftTelportingRay: {fileID: 4596292483087150402}
+  rightTelportingRay: {fileID: 4596292482957002577}
+--- !u!114 &8595634830865658836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103190754942474825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81288755903f1434fa342bd64f2efa1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTeleport: 0
   locomotionSystem: {fileID: 4596292482276000640}
   leftTelportingRay: {fileID: 4596292483087150402}
   rightTelportingRay: {fileID: 4596292482957002577}
