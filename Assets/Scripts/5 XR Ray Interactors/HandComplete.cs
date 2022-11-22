@@ -44,9 +44,12 @@ public class HandComplete : MonoBehaviour
             
             _targetDevice = devices[0];
 
-            GameObject spawnedHand = Instantiate(handPrefab, transform);
-            _handAnimator = spawnedHand.GetComponent<Animator>();
-            _handMesh = spawnedHand.GetComponentInChildren<SkinnedMeshRenderer>();
+            //GameObject spawnedHand = Instantiate(handPrefab, transform);
+            //_handAnimator = spawnedHand.GetComponent<Animator>();
+            //_handMesh = spawnedHand.GetComponentInChildren<SkinnedMeshRenderer>();
+
+            _handAnimator = handPrefab.GetComponent<Animator>();
+            _handMesh = handPrefab.GetComponentInChildren<SkinnedMeshRenderer>();
         }
     }
 

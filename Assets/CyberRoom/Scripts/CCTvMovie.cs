@@ -6,7 +6,6 @@ public class CCTvMovie : MonoBehaviour
 {
     [ColorUsageAttribute(true, true)]
     public Color MaxBright = Color.black;
-    public int BoostBright = 10;
     public bool IsReverse;
     public float Speed;
     public int MatId;
@@ -25,7 +24,6 @@ public class CCTvMovie : MonoBehaviour
         _Material = GetComponent<Renderer>().materials[MatId];
         //bright
         float random = Random.Range(1.0f, 1.5f);
-        random += BoostBright;
         //color variations
         float random2 = Random.Range(0.2f, 0.8f);
         float random3 = Random.Range(0.2f, 0.8f);
@@ -33,7 +31,7 @@ public class CCTvMovie : MonoBehaviour
         _Material.SetColor("_EmissionColor", new Color(random + random2, random + random3, random + random4));
         //emission level
         if (MaxBright != Color.black) GetComponent<Renderer>().materials[MatId].SetColor("_EmissionColor", MaxBright);
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () 
@@ -41,6 +39,6 @@ public class CCTvMovie : MonoBehaviour
         i = (int)(Time.time * Speed);
         i = i % Frames.Length;
         if(IsReverse) i = (Frames.Length - 1) - i;
-        _Material.SetTexture("_EmissionMap", Frames[i]);  //_EmissiveColorMap (hdrp)
-    }
+        _Material.SetTexture("_EmissionMap", Frames[i]);
+	}
 }

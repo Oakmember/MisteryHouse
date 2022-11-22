@@ -923,14 +923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.6653936, g: 2.6653936, b: 2.6653936, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 3
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 52ca8eef087c2114c830b747591d85d9, type: 3}
-  - {fileID: 2800000, guid: 8bfd12713602e624fb0d5f1c1226bbe2, type: 3}
 --- !u!1001 &91757562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2154,13 +2146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 0.55064845, b: 1, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.3
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &247186199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3273,23 +3258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 7
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: aacd0d36b7b41bf49823b52ef584a43c, type: 3}
-  - {fileID: 2800000, guid: a61fb447443764241a52a744d5e46cd6, type: 3}
-  - {fileID: 2800000, guid: 1b4979808cef8864b948bbfe523ace9d, type: 3}
-  - {fileID: 2800000, guid: 4243ffe40870b9c4296e129926d87d84, type: 3}
-  - {fileID: 2800000, guid: f25faf0814c061e4890348b6780dd0d7, type: 3}
-  - {fileID: 2800000, guid: 02715243b4c208e4c84d49aa00445ee8, type: 3}
-  - {fileID: 2800000, guid: 7e7a38a57071abf42a988ae6ef7dea56, type: 3}
-  - {fileID: 2800000, guid: f2d06d9d24e9380449d797229a587861, type: 3}
-  - {fileID: 2800000, guid: 03d78c32b25407c429e6360abb53bfae, type: 3}
-  - {fileID: 2800000, guid: 559eee22be80a354884cae915a139aa5, type: 3}
-  - {fileID: 2800000, guid: 0b03c53615051854ebceeddbb1dfeb6a, type: 3}
 --- !u!1001 &421687360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3957,13 +3925,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 0.53380704, b: 1, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.05
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &530066085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4056,7 +4017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6300464158856535663, guid: 7ffc82bad431747458d5db3020cb3df1, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6300464158856535663, guid: 7ffc82bad431747458d5db3020cb3df1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4389,13 +4350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 0.9529412, b: 0.24830861, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.15
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &578771572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4491,22 +4445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 9
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 32e6c31d4c12d9146bc3b74b8ce29ead, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
 --- !u!4 &586274118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 297741037630988888, guid: 66472c423ba506249bf47dd3fca0db30, type: 3}
@@ -5886,13 +5824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.9528302, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 1
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &700199746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6116,14 +6047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.6653936, g: 2.6653936, b: 2.6653936, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 3
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 52ca8eef087c2114c830b747591d85d9, type: 3}
-  - {fileID: 2800000, guid: 8bfd12713602e624fb0d5f1c1226bbe2, type: 3}
 --- !u!1 &722871911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7934854438046161805, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
@@ -6289,28 +6212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 2
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 32e6c31d4c12d9146bc3b74b8ce29ead, type: 3}
-  - {fileID: 2800000, guid: 765f7285de58a59439a43d1f79bb22d5, type: 3}
-  - {fileID: 2800000, guid: 332cef143f42bb948a0450e76ea7fc1b, type: 3}
-  - {fileID: 2800000, guid: 517bf3d6d345ee64ea7f4d57727b8574, type: 3}
-  - {fileID: 2800000, guid: 6f9a33f8e50c89849a745a4671c70a2f, type: 3}
-  - {fileID: 2800000, guid: a3e791dd86e1d0c4fa916647820e89be, type: 3}
-  - {fileID: 2800000, guid: 8b9825353bd543b428dfcacefc63aaad, type: 3}
-  - {fileID: 2800000, guid: aa2a05ec863aaa54c806f0cacf15d336, type: 3}
-  - {fileID: 2800000, guid: f7dbeec5eae40d14d9fb34a90a31efe7, type: 3}
-  - {fileID: 2800000, guid: a0c766a5de9fdfe488ef84cb33cf0442, type: 3}
-  - {fileID: 2800000, guid: f7dbeec5eae40d14d9fb34a90a31efe7, type: 3}
 --- !u!1001 &740550047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6589,14 +6490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.6653936, g: 2.6653936, b: 2.6653936, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 3
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 52ca8eef087c2114c830b747591d85d9, type: 3}
-  - {fileID: 2800000, guid: 8bfd12713602e624fb0d5f1c1226bbe2, type: 3}
 --- !u!1001 &759541804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6693,13 +6586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.9528302, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.2
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &771805200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6841,7 +6727,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782012175 stripped
 GameObject:
@@ -6860,13 +6746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 1.7207954, g: 1.7207954, b: 1.7207954, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1001 &785239804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7081,14 +6960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 07f8f8d0f220838458b6bd51e5373c6d, type: 3}
-  - {fileID: 2800000, guid: af6c7b6cee1861144bdf3cf49b5158a6, type: 3}
 --- !u!1 &794197368
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,7 +7007,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &798080417 stripped
 Transform:
@@ -7224,13 +7095,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 2.143547, g: 2.143547, b: 2.143547, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1 &809052152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1014396333443953040, guid: 1d9d5729c42041340b17c62f0253e798, type: 3}
@@ -7248,13 +7112,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 1.6055588, g: 1.6055588, b: 1.6055588, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
+--- !u!1001 &817515564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0245
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.14529777
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.989388
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -163.291
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
+      propertyPath: m_Name
+      value: uploads_files_2824186_Glove_fbx
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25d098ea971bc66449574cf1343f9a22, type: 3}
 --- !u!1 &830108722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2979190898968598730, guid: 41685890b9e7b994db1562f2d2f00c04, type: 3}
@@ -7272,22 +7188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 1.7207954, g: 1.7207954, b: 1.7207954, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 9
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 32e6c31d4c12d9146bc3b74b8ce29ead, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
 --- !u!114 &830108727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7300,13 +7200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 1.7207954, g: 1.7207954, b: 1.7207954, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1001 &832756710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7604,14 +7497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 07f8f8d0f220838458b6bd51e5373c6d, type: 3}
-  - {fileID: 2800000, guid: af6c7b6cee1861144bdf3cf49b5158a6, type: 3}
 --- !u!1001 &865961714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7848,13 +7733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.9528302, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &886142913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8142,28 +8020,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 32e6c31d4c12d9146bc3b74b8ce29ead, type: 3}
-  - {fileID: 2800000, guid: 765f7285de58a59439a43d1f79bb22d5, type: 3}
-  - {fileID: 2800000, guid: 332cef143f42bb948a0450e76ea7fc1b, type: 3}
-  - {fileID: 2800000, guid: 517bf3d6d345ee64ea7f4d57727b8574, type: 3}
-  - {fileID: 2800000, guid: 6f9a33f8e50c89849a745a4671c70a2f, type: 3}
-  - {fileID: 2800000, guid: a3e791dd86e1d0c4fa916647820e89be, type: 3}
-  - {fileID: 2800000, guid: 8b9825353bd543b428dfcacefc63aaad, type: 3}
-  - {fileID: 2800000, guid: aa2a05ec863aaa54c806f0cacf15d336, type: 3}
-  - {fileID: 2800000, guid: f7dbeec5eae40d14d9fb34a90a31efe7, type: 3}
-  - {fileID: 2800000, guid: a0c766a5de9fdfe488ef84cb33cf0442, type: 3}
-  - {fileID: 2800000, guid: f7dbeec5eae40d14d9fb34a90a31efe7, type: 3}
 --- !u!1001 &920923802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8332,13 +8188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.9528302, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &932850413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9717,13 +9566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.8962264, g: 0.5230453, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1012250818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9883,22 +9725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 12
-  MatId: 2
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 765f7285de58a59439a43d1f79bb22d5, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
 --- !u!1 &1042633721
 GameObject:
   m_ObjectHideFlags: 0
@@ -9931,13 +9757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 1, b: 0.0064702034, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1042633723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10478,7 +10297,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4514811179655467741, guid: ee324168fe10d43478b8d7111e1096c5, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4514811179655467741, guid: ee324168fe10d43478b8d7111e1096c5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10549,13 +10368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 2.143547, g: 2.143547, b: 2.143547, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1001 &1119927065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10961,13 +10773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 2.143547, g: 2.143547, b: 2.143547, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1001 &1139461571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11355,6 +11160,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100339863849279426, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4451388176466237080, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
       propertyPath: m_HDR
       value: 1
@@ -11984,13 +11793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.9528302, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.2
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1240106298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12677,13 +12479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 0.42205977, b: 1, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1328503042
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13265,7 +13060,7 @@ Transform:
   - {fileID: 1467139194}
   - {fileID: 700199749}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1345722897 stripped
 Transform:
@@ -13432,13 +13227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 1, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1363984812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13598,22 +13386,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 12
-  MatId: 2
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 765f7285de58a59439a43d1f79bb22d5, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
 --- !u!1001 &1382373399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14308,13 +14080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 0.9529412, b: 0.24830861, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.15
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1467139191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14630,13 +14395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0.9528302, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 1
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1501778102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15008,7 +14766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1218133043151254708, guid: f43b87b48c4d53647b2ce7338995ee14, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1218133043151254708, guid: f43b87b48c4d53647b2ce7338995ee14, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15341,13 +15099,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 1, g: 0, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1557676188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15640,14 +15391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 07f8f8d0f220838458b6bd51e5373c6d, type: 3}
-  - {fileID: 2800000, guid: af6c7b6cee1861144bdf3cf49b5158a6, type: 3}
 --- !u!1001 &1628555452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15852,13 +15595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 2.143547, g: 2.143547, b: 2.143547, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1 &1671745700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6022991781244872388, guid: 777805151f58f8248b11d2b67b43919c, type: 3}
@@ -15876,14 +15612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.6653936, g: 2.6653936, b: 2.6653936, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 3
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 52ca8eef087c2114c830b747591d85d9, type: 3}
-  - {fileID: 2800000, guid: 8bfd12713602e624fb0d5f1c1226bbe2, type: 3}
 --- !u!1001 &1677271472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16490,13 +16218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 2.143547, g: 2.143547, b: 2.143547, a: 1}
-  BoostBright: 3
-  SwitchTime: 0.35
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!1001 &1769092340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16667,14 +16388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.3636508, g: 2.3636508, b: 2.3636508, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 4
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 52ca8eef087c2114c830b747591d85d9, type: 3}
-  - {fileID: 2800000, guid: 07f8f8d0f220838458b6bd51e5373c6d, type: 3}
 --- !u!1001 &1787085441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17385,28 +17098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: d4ad2c51a23f04a4d83167fd86e20808, type: 3}
-  - {fileID: 2800000, guid: c4f9713b726aca4499f45dcc86581b60, type: 3}
-  - {fileID: 2800000, guid: e11f58d124becef429956f5f42fbe032, type: 3}
-  - {fileID: 2800000, guid: 2c86eee7c71a4164180055ee79ca0fb3, type: 3}
-  - {fileID: 2800000, guid: 1e3b0bcf963e10c4094d01365cef9040, type: 3}
-  - {fileID: 2800000, guid: 32e6c31d4c12d9146bc3b74b8ce29ead, type: 3}
-  - {fileID: 2800000, guid: 765f7285de58a59439a43d1f79bb22d5, type: 3}
-  - {fileID: 2800000, guid: 332cef143f42bb948a0450e76ea7fc1b, type: 3}
-  - {fileID: 2800000, guid: 517bf3d6d345ee64ea7f4d57727b8574, type: 3}
-  - {fileID: 2800000, guid: 6f9a33f8e50c89849a745a4671c70a2f, type: 3}
-  - {fileID: 2800000, guid: a3e791dd86e1d0c4fa916647820e89be, type: 3}
-  - {fileID: 2800000, guid: 8b9825353bd543b428dfcacefc63aaad, type: 3}
-  - {fileID: 2800000, guid: aa2a05ec863aaa54c806f0cacf15d336, type: 3}
-  - {fileID: 2800000, guid: f7dbeec5eae40d14d9fb34a90a31efe7, type: 3}
-  - {fileID: 2800000, guid: a0c766a5de9fdfe488ef84cb33cf0442, type: 3}
-  - {fileID: 2800000, guid: f7dbeec5eae40d14d9fb34a90a31efe7, type: 3}
 --- !u!1 &1870627960
 GameObject:
   m_ObjectHideFlags: 0
@@ -17536,13 +17227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 0, g: 1, b: 0.19104314, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &1875048854
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18926,7 +18610,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3124988151702971185, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3124988151702971185, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18968,9 +18652,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3124988151702971186, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3124988151702971189, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
       propertyPath: m_Name
       value: Locomotion System
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124988151702971198, guid: ef6dcaf3d9aa8124294a9898c8ba0722, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -19252,14 +18944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e20bb9d5d1af6a4c8f23ba3873c201e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxBright: {r: 2.494018, g: 2.494018, b: 2.494018, a: 1}
-  BoostBright: 0
-  IsReverse: 0
-  Speed: 5
-  MatId: 1
-  Frames:
-  - {fileID: 2800000, guid: 07f8f8d0f220838458b6bd51e5373c6d, type: 3}
-  - {fileID: 2800000, guid: af6c7b6cee1861144bdf3cf49b5158a6, type: 3}
 --- !u!1001 &2126015387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19356,13 +19040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220456c04feb4264c930996d2b4e780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsActive: 1
-  MaxBright: {r: 1, g: 0.64744824, b: 0, a: 0}
-  BoostBright: 3
-  SwitchTime: 0.1
-  SwitchModes: 0
-  MatId: 0
-  LightSource: {fileID: 0}
 --- !u!65 &2146282636
 BoxCollider:
   m_ObjectHideFlags: 0
