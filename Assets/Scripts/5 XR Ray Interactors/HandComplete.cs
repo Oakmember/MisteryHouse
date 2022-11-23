@@ -1,3 +1,4 @@
+using Shared;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -73,20 +74,20 @@ public class HandComplete : MonoBehaviour
         //This will get the value for our trigger from the target device and output a flaot into triggerValue
         if (_targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
-            _handAnimator.SetFloat("Trigger", triggerValue);
+            _handAnimator.SetFloat(Consts.trigger, triggerValue);
         }
         else
         {
-            _handAnimator.SetFloat("Trigger", 0);
+            _handAnimator.SetFloat(Consts.trigger, 0);
         }
         //This will get the value for our grip from the target device and output a flaot into gripValue
         if (_targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
         {
-            _handAnimator.SetFloat("Grip", gripValue);
+            _handAnimator.SetFloat(Consts.grip, gripValue);
         }
         else
         {
-            _handAnimator.SetFloat("Grip", 0);
+            _handAnimator.SetFloat(Consts.grip, 0);
         }
     }
 
