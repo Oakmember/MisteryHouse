@@ -2674,17 +2674,13 @@ PrefabInstance:
       propertyPath: highlightController
       value: 
       objectReference: {fileID: 613132062}
-    - target: {fileID: 0}
-      propertyPath: backParameters.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: outlineTargets.Array.data[0].IsVisible
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6308931585115679493, guid: 9635cb03f4e3cfe4ab3052f8945e2f53, type: 3}
       propertyPath: m_Name
       value: CombatKnife
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393481480349324405, guid: 9635cb03f4e3cfe4ab3052f8945e2f53, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6685034498490347967, guid: 9635cb03f4e3cfe4ab3052f8945e2f53, type: 3}
       propertyPath: m_RootOrder
