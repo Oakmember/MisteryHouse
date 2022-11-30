@@ -8335,11 +8335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3673029828146223905, guid: f76fbe55e04e8f548a17dcc105fdcec6, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 2.7e-44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3673029828146223905, guid: f76fbe55e04e8f548a17dcc105fdcec6, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 4.2744e-41
+      value: 1.971e-41
       objectReference: {fileID: 0}
     - target: {fileID: 3673029828146223905, guid: f76fbe55e04e8f548a17dcc105fdcec6, type: 3}
       propertyPath: m_BoundingSphereOverride.z
@@ -11272,6 +11272,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1226171860, guid: ee324168fe10d43478b8d7111e1096c5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3240524873019645460, guid: ee324168fe10d43478b8d7111e1096c5, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -12240,6 +12244,14 @@ PrefabInstance:
     - target: {fileID: 100339863849279426, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630244314815595157, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630244314815595157, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4451388176466237080, guid: f82a2274b5592e44eb6dd67559e47ba4, type: 3}
       propertyPath: m_HDR
@@ -16140,11 +16152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552405592729803131, guid: ad3d62bc27f45d847895afcf1c800184, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.00000017484555
       objectReference: {fileID: 0}
     - target: {fileID: 2552405592729803131, guid: ad3d62bc27f45d847895afcf1c800184, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.000000074505806
       objectReference: {fileID: 0}
     - target: {fileID: 2552405592729803131, guid: ad3d62bc27f45d847895afcf1c800184, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16301,19 +16313,19 @@ LightingSettings:
   m_BounceScale: 1
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 5
-  m_UsingShadowmask: 1
+  m_UsingShadowmask: 0
   m_BakeBackend: 1
   m_LightmapMaxSize: 1024
-  m_BakeResolution: 5
+  m_BakeResolution: 40
   m_Padding: 2
   m_LightmapCompression: 3
-  m_AO: 0
+  m_AO: 1
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 0
+  m_MixedBakeMode: 1
+  m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
   m_ExportTrainingData: 0
@@ -16326,14 +16338,14 @@ LightingSettings:
   m_FinalGatherFiltering: 1
   m_PVRCulling: 0
   m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
+  m_PVRDirectSampleCount: 64
   m_PVRSampleCount: 512
   m_PVREnvironmentSampleCount: 512
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
   m_PVRMinBounces: 2
-  m_PVREnvironmentImportanceSampling: 0
+  m_PVREnvironmentImportanceSampling: 1
   m_PVRFilteringMode: 2
   m_PVRDenoiserTypeDirect: 0
   m_PVRDenoiserTypeIndirect: 0
@@ -18667,19 +18679,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6660554011703366310, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -4.4895226e+32
+      value: 2.524355e-29
       objectReference: {fileID: 0}
     - target: {fileID: 6660554011703366310, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1.02e-43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6660554011703366310, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0
+      value: 1.9706e-41
       objectReference: {fileID: 0}
     - target: {fileID: 6660554011703366310, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 6e-44
       objectReference: {fileID: 0}
     - target: {fileID: 7934854438046161805, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20996,6 +21008,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1342196106}
     m_Modifications:
+    - target: {fileID: 621058141586935660, guid: f6fdfaf513b7303429e77f24d49236d6, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 826779617560179303, guid: f6fdfaf513b7303429e77f24d49236d6, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -21070,7 +21086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7413901673146147264, guid: f6fdfaf513b7303429e77f24d49236d6, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7980670967737038502, guid: f6fdfaf513b7303429e77f24d49236d6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23494,11 +23510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3673029828146223905, guid: f76fbe55e04e8f548a17dcc105fdcec6, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 6.2e-44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3673029828146223905, guid: f76fbe55e04e8f548a17dcc105fdcec6, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 4.2958e-41
+      value: 1.9708e-41
       objectReference: {fileID: 0}
     - target: {fileID: 3673029828146223905, guid: f76fbe55e04e8f548a17dcc105fdcec6, type: 3}
       propertyPath: m_BoundingSphereOverride.z
@@ -23736,7 +23752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715049123757895873, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3998535066301113057, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23768,7 +23784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5523058858246943133, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6003874119858274862, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -23777,6 +23793,10 @@ PrefabInstance:
     - target: {fileID: 6024680099366416619, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111468350375818167, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6844297053902599131, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_IsActive
@@ -23794,6 +23814,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 7777160009818758850, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7863282170431359136, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -23802,9 +23826,17 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 8536842717787361901, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8734033035901836555, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870806208654097992, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9056180408954834705, guid: 53f08b07d33ddaa49ba9545c7a78c700, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -24855,6 +24887,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1342196106}
     m_Modifications:
+    - target: {fileID: 621058141586935660, guid: f6fdfaf513b7303429e77f24d49236d6, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 621058141586935660, guid: f6fdfaf513b7303429e77f24d49236d6, type: 3}
       propertyPath: m_StaticShadowCaster
       value: 0
@@ -26095,7 +26131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6660554011703366310, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 4.5907e-41
+      value: 1.9709e-41
       objectReference: {fileID: 0}
     - target: {fileID: 6660554011703366310, guid: 953ec2c7dfa7bb7459c15416c8a354d4, type: 3}
       propertyPath: m_BoundingSphereOverride.z
