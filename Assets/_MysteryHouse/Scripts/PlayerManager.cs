@@ -5,6 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PlayerManager : MonoBehaviour
 {
+    public static PlayerManager instance;
+
     [SerializeField]
     private bool isTeleport = false;
 
@@ -17,25 +19,39 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     private GameObject rightTelportingRay = null;
 
+    [SerializeField]
+    private XRPlayerController xrPlayerController = null;
+
     private TeleportationProvider teleportationProvider = null;
-    private ActionBasedContinuousMoveProvider actionBasedContinuousMoveProvider = null;
+
+    public static PlayerManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
 
     private void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        instance = this;
+
         teleportationProvider = locomotionSystem.gameObject.GetComponent<TeleportationProvider>();
-        actionBasedContinuousMoveProvider = locomotionSystem.gameObject.GetComponent<ActionBasedContinuousMoveProvider>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        SetTeleport(isTeleport);
+        //SetTeleport(isTeleport);
     }
 
-    private void SetTeleport(bool isTeleportParam)
+    public void SetTeleport(bool isTeleportParam)
     {
         teleportationProvider.enabled = isTeleportParam;
-        actionBasedContinuousMoveProvider.enabled = !isTeleportParam;
+        xrPlayerController.IsContinousMoving = !isTeleportParam;
 
         leftTelportingRay.SetActive(isTeleportParam);
         rightTelportingRay.SetActive(isTeleportParam);

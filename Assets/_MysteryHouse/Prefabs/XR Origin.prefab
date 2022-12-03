@@ -2450,6 +2450,7 @@ MonoBehaviour:
   locomotionSystem: {fileID: 452774678}
   leftTelportingRay: {fileID: 1226171860}
   rightTelportingRay: {fileID: 827559879}
+  xrPlayerController: {fileID: 0}
 --- !u!114 &2079800162450741167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,6 +2467,7 @@ MonoBehaviour:
   locomotionSystem: {fileID: 452774678}
   leftTelportingRay: {fileID: 1226171860}
   rightTelportingRay: {fileID: 827559879}
+  xrPlayerController: {fileID: 0}
 --- !u!1 &4514811179803828471
 GameObject:
   m_ObjectHideFlags: 0
