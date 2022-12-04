@@ -10,12 +10,12 @@ public class ShotCounter : MonoBehaviour
     void Start()
     {
         _text = GetComponent<TextMeshProUGUI>();
-        FireBullet.GunFired += IncreaseCounter;
+        WeaponController.GunFired += IncreaseCounter;
         UpdateText();
     }
     private void OnDestroy()
     {
-        FireBullet.GunFired -= IncreaseCounter;
+        WeaponController.GunFired -= IncreaseCounter;
     }
 
     public void ResetCounter()

@@ -1,7 +1,9 @@
+using Shared;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using static UnityEditor.Rendering.ShadowCascadeGUI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -21,6 +23,12 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField]
     private XRPlayerController xrPlayerController = null;
+
+    [SerializeField]
+    private HandStateType handStateTypeLeft = HandStateType.None;
+
+    [SerializeField]
+    private HandStateType handStateTypeRight = HandStateType.None;
 
     private TeleportationProvider teleportationProvider = null;
 
@@ -57,5 +65,13 @@ public class PlayerManager : MonoBehaviour
         rightTelportingRay.SetActive(isTeleportParam);
     }
 
-   
+    public void SetLeftHandState(HandStateType handStateParam)
+    {
+        handStateTypeLeft = handStateParam;
+    }
+
+    public void SetRightHandState(HandStateType handStateParam)
+    {
+        handStateTypeRight = handStateParam;
+    }
 }

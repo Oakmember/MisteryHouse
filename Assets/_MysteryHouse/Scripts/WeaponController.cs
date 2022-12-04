@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.Runtime.CompilerServices;
 
-public class FireBullet : MonoBehaviour
+public class WeaponController : MonoBehaviour
 {
     [SerializeField]
     private bool UseObjectPool = false;
@@ -21,10 +21,13 @@ public class FireBullet : MonoBehaviour
     [SerializeField]
     private TrailRenderer BulletTrail;
     [SerializeField]
+    private int maxMagazines = 5;
+    [SerializeField]
     private float ShootDelay = 0.5f;
     [SerializeField]
     private LayerMask Mask;
-    
+   
+
     [SerializeField]
     private float BulletRange = 100;
     [SerializeField]
@@ -33,12 +36,10 @@ public class FireBullet : MonoBehaviour
     private Animator Animator = null;
     private AudioSource audioSource = null;
     private float LastShootTime;
+    private int currentAmmo = 0;
+    private bool isMagazineAvailable = true;
 
-    //public float speed = 50f;
-    //public GameObject bulletObj;
-    //public Transform frontOfGun;
- 
-    public static event Action GunFired;
+   public static event Action GunFired;
 
     private void Awake()
     {
@@ -46,25 +47,28 @@ public class FireBullet : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Start()
+    {
+       
+    }
+
     public void Fire()
     {
+
+        if (currentAmmo > 0)
+        {
+            --currentAmmo;
+            Shoot();
+        }
         
-
-        //Raycast
-        Shoot();
-
-
-        //Bullets
-        //GameObject spawnedBullet = Instantiate(bulletObj, frontOfGun.position, frontOfGun.rotation);
-        //spawnedBullet.GetComponent<Rigidbody>().velocity = speed * frontOfGun.forward;
-        //Destroy(spawnedBullet, 5f);
-        GunFired?.Invoke();
     }
 
     private void Shoot()
     {
+      
         if (LastShootTime + ShootDelay < Time.time)
         {
+            GunFired?.Invoke();
             audioSource.Play();
             // Use an object pool instead for these! To keep this tutorial focused, we'll skip implementing one.
             // For more details you can see: https://youtu.be/fsDE_mO4RZM or if using Unity 2021+: https://youtu.be/zyzqA_CPz2E
@@ -136,30 +140,19 @@ public class FireBullet : MonoBehaviour
         return direction;
     }
 
-    //private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact)
-    //{
-    //    // This has been updated from the video implementation to fix a commonly raised issue about the bullet trails
-    //    // moving slowly when hitting something close, and not
-    //    Vector3 startPosition = Trail.transform.position;
-    //    float distance = Vector3.Distance(Trail.transform.position, HitPoint);
-    //    float remainingDistance = distance;
+    public void Reload(PistolMagazine pistolMagazineParam)
+    {
+        if (!pistolMagazineParam) return;
 
-    //    while (remainingDistance > 0)
-    //    {
-    //        Trail.transform.position = Vector3.Lerp(startPosition, HitPoint, 1 - (remainingDistance / distance));
-
-    //        remainingDistance -= BulletSpeed * Time.deltaTime;
-
-    //        yield return null;
-    //    }
-    //    //Animator.SetBool("IsShooting", false);
-    //    Trail.transform.position = HitPoint;
-    //    if (MadeImpact)
-    //    {
-    //        Instantiate(ImpactParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
-    //    }
-
-    //    //Destroy(Trail.gameObject, Trail.time);
-    //}
+        if (isMagazineAvailable)
+        {
+            currentAmmo = pistolMagazineParam.GetMagazineAmmo();
+        }
+        else
+        {
+            //TODO: sound of empty gun
+        }
+        
+    }
 
 }

@@ -1779,7 +1779,7 @@ Transform:
   - {fileID: 3686515774700895535}
   - {fileID: 976988959731776198}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3686515774599799567
 MonoBehaviour:
@@ -1848,6 +1848,8 @@ MonoBehaviour:
   leftTelportingRay: {fileID: 976988958378644485}
   rightTelportingRay: {fileID: 976988960396230166}
   xrPlayerController: {fileID: 976988959571096028}
+  handStateTypeLeft: 0
+  handStateTypeRight: 0
 --- !u!54 &976988958804668157
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2207,8 +2209,8 @@ GameObject:
   - component: {fileID: 3686515774836400907}
   - component: {fileID: 3686515774836400911}
   - component: {fileID: 3686515774836400904}
-  - component: {fileID: 3686515774836400905}
   - component: {fileID: 3686515774836400910}
+  - component: {fileID: 1711437223685318034}
   m_Layer: 10
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -2410,10 +2412,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc53b2a6797c5429e42876f3f16d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handType: 1
+  handStateType: 0
   handPrefab: {fileID: 8045830659105670982}
   hideHandOnSelect: 1
   inputDeviceCharacteristics: 320
---- !u!114 &3686515774836400905
+--- !u!135 &3686515774836400910
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686515774836400906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1711437223685318034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2422,7 +2439,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3686515774836400906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Script: {fileID: 11500000, guid: ac94f6c788c12f048b52f6e06d4805dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -2515,19 +2532,6 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
---- !u!135 &3686515774836400910
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3686515774836400906}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3686515774880338214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,8 +3065,8 @@ GameObject:
   - component: {fileID: 3686515775211920037}
   - component: {fileID: 3686515775211919961}
   - component: {fileID: 3686515775211919962}
-  - component: {fileID: 3686515775211919963}
   - component: {fileID: 3686515775211919960}
+  - component: {fileID: 1711437222738844989}
   m_Layer: 10
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -3264,10 +3268,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc53b2a6797c5429e42876f3f16d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handType: 2
+  handStateType: 0
   handPrefab: {fileID: 2411218535998069875}
   hideHandOnSelect: 1
   inputDeviceCharacteristics: 576
---- !u!114 &3686515775211919963
+--- !u!135 &3686515775211919960
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686515775211920036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1711437222738844989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3276,7 +3295,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3686515775211920036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4253f32900bcc4d499d675566142ded0, type: 3}
+  m_Script: {fileID: 11500000, guid: ac94f6c788c12f048b52f6e06d4805dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -3369,19 +3388,6 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
---- !u!135 &3686515775211919960
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3686515775211920036}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &976988958705931207
 PrefabInstance:
   m_ObjectHideFlags: 0

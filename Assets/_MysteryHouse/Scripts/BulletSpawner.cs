@@ -68,14 +68,14 @@ public class BulletSpawner : MonoBehaviour
         Destroy(Instance.gameObject);
     }
 
-    private void OnGUI()
-    {
-        if (UseObjectPool)
-        {
-            GUI.Label(new Rect(10, 10, 200, 30), $"Total Pool Size: {BulletPool.CountAll}");
-            GUI.Label(new Rect(10, 30, 200, 30), $"Active Objects: {BulletPool.CountActive}");
-        }
-    }
+    //private void OnGUI()
+    //{
+    //    if (UseObjectPool)
+    //    {
+    //        GUI.Label(new Rect(10, 10, 200, 30), $"Total Pool Size: {BulletPool.CountAll}");
+    //        GUI.Label(new Rect(10, 30, 200, 30), $"Active Objects: {BulletPool.CountActive}");
+    //    }
+    //}
 
     //private void Update()
     //{

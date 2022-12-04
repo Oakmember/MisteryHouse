@@ -7,6 +7,7 @@ TagManager:
   - Button
   - Teleport
   - Climbable
+  - Magazine
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - Body
   - Hands
   - Enemy
-  - 
-  - 
-  - 
+  - Neutral
+  - NonInteractable
+  - SubInteractable
   - 
   - 
   - 

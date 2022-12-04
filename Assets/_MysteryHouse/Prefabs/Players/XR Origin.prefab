@@ -1476,6 +1476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc53b2a6797c5429e42876f3f16d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handType: 0
+  handStateType: 0
   handPrefab: {fileID: 3240524873029004706}
   hideHandOnSelect: 1
   inputDeviceCharacteristics: 576
@@ -2451,6 +2453,8 @@ MonoBehaviour:
   leftTelportingRay: {fileID: 1226171860}
   rightTelportingRay: {fileID: 827559879}
   xrPlayerController: {fileID: 0}
+  handStateTypeLeft: 0
+  handStateTypeRight: 0
 --- !u!114 &2079800162450741167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2468,6 +2472,8 @@ MonoBehaviour:
   leftTelportingRay: {fileID: 1226171860}
   rightTelportingRay: {fileID: 827559879}
   xrPlayerController: {fileID: 0}
+  handStateTypeLeft: 0
+  handStateTypeRight: 0
 --- !u!1 &4514811179803828471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,6 +3210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc53b2a6797c5429e42876f3f16d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handType: 0
+  handStateType: 0
   handPrefab: {fileID: 7072478886415988375}
   hideHandOnSelect: 1
   inputDeviceCharacteristics: 320

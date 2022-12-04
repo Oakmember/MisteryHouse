@@ -70,7 +70,6 @@ public class Bullet : MonoBehaviour
             Instantiate(ImpactParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
         }
         Trail.enabled = false;
-        Debug.Log("sssssssssssssss");
         Disable?.Invoke(this);
         //Destroy(Trail.gameObject, Trail.time);
     }
