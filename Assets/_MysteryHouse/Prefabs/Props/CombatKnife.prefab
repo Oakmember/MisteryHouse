@@ -130,7 +130,7 @@ Transform:
   - {fileID: 613132060}
   - {fileID: 1577703718}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7739955892936818202
 MeshFilter:
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a0a89df8e5e6a489a69fef14302a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightController: {fileID: 0}
+  highlightController: {fileID: 8831757715744504905}
 --- !u!114 &3974326493812042615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5

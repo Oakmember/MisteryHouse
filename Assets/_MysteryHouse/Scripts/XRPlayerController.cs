@@ -1,3 +1,4 @@
+using Shared;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,6 +53,9 @@ public class XRPlayerController : MonoBehaviour
     private LayerMask teleportLayer;
 
     [SerializeField]
+    private LayerMask nonMoveLayer;
+
+    [SerializeField]
     private float speed = 10.0f;
 
     [SerializeField]
@@ -91,10 +95,18 @@ public class XRPlayerController : MonoBehaviour
     private float heightOffset = 0.2f;
     private bool isRunning = false;
     private bool isContinousMoving = true;
+    private bool isCheckingGround = true;
+    private bool isNonMovingArea = false;
 
     public bool IsContinousMoving { 
         get => isContinousMoving;
         set => isContinousMoving = value;
+    }
+
+    public bool IsCheckingGround
+    {
+        get => isCheckingGround;
+        set => isCheckingGround = value;
     }
 
     private void Awake()
@@ -134,7 +146,7 @@ public class XRPlayerController : MonoBehaviour
         if (PlayerManager.instance)
         {
             playerManager = PlayerManager.instance;
-            playerManager.SetTeleport(CheckIfGrounded(teleportLayer));
+            //playerManager.SetTeleport(CheckIfTeleport(teleportLayer));
         }
 
         GetDevice();
@@ -151,6 +163,7 @@ public class XRPlayerController : MonoBehaviour
         CapsuleFollowHeadset();
 
         if (!isContinousMoving) return;
+        //if (!isNonMovingArea) return;
 
         Vector2 primary2dValue = moveInputAction.ReadValue<Vector2>();
         
@@ -194,6 +207,19 @@ public class XRPlayerController : MonoBehaviour
         return hasHit;
     }
 
+    private int CheckWhatLayer()
+    {
+        Vector3 rayStart = transform.TransformPoint(character.center + new Vector3(0,0,1));
+        float rayLength = character.center.y + 0.01f;
+        bool hasHit = Physics.SphereCast(rayStart, character.radius, Vector3.down, out RaycastHit hitInfo, rayLength);
+        //Debug.Log(hitInfo.transform.gameObject.layer);
+        if (!hasHit) return -1;
+        GameObject hitGameObject = hitInfo.transform.gameObject;
+        if (!hitGameObject) return -1;
+      
+        return hitGameObject.layer;
+    }
+
     private void CapsuleFollowHeadset()
     {
         character.height = rig.CameraInOriginSpaceHeight + heightOffset;
@@ -202,12 +228,42 @@ public class XRPlayerController : MonoBehaviour
     }
 
     void Update()
-    {
-        playerManager.SetTeleport(CheckIfGrounded(teleportLayer));
+    { //CheckWhatLayer().value == LayerMask.NameToLayer(Consts.teleport)
+        //playerManager.SetTeleport();
+        SetLayer(CheckWhatLayer());
 
         if (controller == null)
         {
             GetDevice();
+        }
+    }
+
+    private void SetLayer(int layerMaskParam)
+    {
+
+        if (layerMaskParam == LayerMask.NameToLayer(Consts.teleportLayer))
+        {
+            //Debug.Log("teleportLayer");
+            playerManager.SetTeleport(true);
+        }
+        else if (layerMaskParam == LayerMask.NameToLayer(Consts.anchorLayer))
+        {
+            //Debug.Log("anchor");
+            playerManager.SetTeleport(true);
+        }
+        else if (layerMaskParam == LayerMask.NameToLayer(Consts.nonMoveLayer))
+        {
+            //Debug.Log("nonMoveLayer");
+            playerManager.SetTeleport(true);
+        }
+        else if (layerMaskParam == LayerMask.NameToLayer(Consts.defaultLayer))
+        {
+            //Debug.Log("default");
+            playerManager.SetTeleport(false);
+        }
+        else
+        {
+            Debug.Log("Non Valid");
         }
     }
 

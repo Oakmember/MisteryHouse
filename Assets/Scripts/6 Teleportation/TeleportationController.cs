@@ -1,5 +1,3 @@
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +6,7 @@ using UnityEngine.InputSystem;
 //Allows us to use the Interaction Toolkit to enable and disable our rays
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class TeleportationController: MonoBehaviour
+public class TeleportationController : MonoBehaviour
 {
     //Used to determine current active state of the Teleportation System
     static private bool _teleportIsActive = false;
@@ -96,9 +94,10 @@ public class TeleportationController: MonoBehaviour
         {
             rayInteractor.enabled = false;
             _teleportIsActive = false;
+            //PlayerManager.Instance.SetTeleport(false);
             return;
         }
-
+        //PlayerManager.Instance.SetTeleport(true);
         TeleportRequest teleportRequest = new TeleportRequest()
         {
             destinationPosition = raycastHit.point,
@@ -128,7 +127,14 @@ public class TeleportationController: MonoBehaviour
         {
             rayInteractor.enabled = false;
             _teleportIsActive = false;
+            
         }
 
     }
+
+    //private void OnMoving(InputAction.CallbackContext context)
+    //{
+    //    Debug.Log("sjjjjj");
+    //    PlayerManager.Instance.SetTeleport(false);
+    //}
 }

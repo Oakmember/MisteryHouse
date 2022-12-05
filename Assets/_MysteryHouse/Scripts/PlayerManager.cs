@@ -51,15 +51,11 @@ public class PlayerManager : MonoBehaviour
         teleportationProvider = locomotionSystem.gameObject.GetComponent<TeleportationProvider>();
     }
 
-    void Start()
-    {
-        //SetTeleport(isTeleport);
-    }
-
     public void SetTeleport(bool isTeleportParam)
     {
         teleportationProvider.enabled = isTeleportParam;
         xrPlayerController.IsContinousMoving = !isTeleportParam;
+        xrPlayerController.IsCheckingGround = !isTeleportParam;
 
         leftTelportingRay.SetActive(isTeleportParam);
         rightTelportingRay.SetActive(isTeleportParam);

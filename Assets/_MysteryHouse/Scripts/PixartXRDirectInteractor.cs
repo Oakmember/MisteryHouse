@@ -11,10 +11,9 @@ public class PixartXRDirectInteractor : XRDirectInteractor
     protected override void OnEnable()
     {
         base.OnEnable();
-
-        
        
     }
+
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);

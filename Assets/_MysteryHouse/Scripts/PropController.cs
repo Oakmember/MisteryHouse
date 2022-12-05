@@ -8,11 +8,15 @@ public class PropController : MonoBehaviour
     [SerializeField]
     private PropStateType propStateType = PropStateType.None;
 
+  
+
     public PropStateType PropStateType
     {
         get => propStateType;
         set => propStateType = value; 
     }
+
+  
 
     void Start()
     {

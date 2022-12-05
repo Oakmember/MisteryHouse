@@ -9,7 +9,10 @@ public class PixartXRGrabInteractable : XRGrabInteractable
     [SerializeField]
     private bool isGrabActivated = false;
 
+    private PropController propController = null;
+
     public bool IsGrabActivated => isGrabActivated;
+
 
     protected override void Grab()
     {
@@ -18,8 +21,13 @@ public class PixartXRGrabInteractable : XRGrabInteractable
             isGrabActivated = true;
 
             base.Grab();
-        }
 
+            PropController propController = gameObject.GetComponent<PropController>();
+            if (propController)
+            {
+                propController.Event_SetLayerNonInteractable();
+            }
+        }
     }
 
     protected override void Drop()
@@ -27,6 +35,12 @@ public class PixartXRGrabInteractable : XRGrabInteractable
         isGrabActivated = false;
 
         base.Drop();
+
+        PropController propController = gameObject.GetComponent<PropController>();
+        if (propController)
+        {
+            propController.Event_SetLayerInteractable();
+        }
     }
 
 }
