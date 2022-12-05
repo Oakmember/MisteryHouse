@@ -14,6 +14,7 @@ namespace Shared
         public const string anchorLayer = "Anchor";
         public const string defaultLayer = "Default";
         public const string nonMoveLayer = "NonMove";
+        public const string playerTag = "Player";
     }
 
 }
