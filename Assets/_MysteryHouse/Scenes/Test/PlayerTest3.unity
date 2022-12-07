@@ -2139,7 +2139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3686515774599799566, guid: 4d1e49f0be59e4f48954ce1c82bed559, type: 3}
       propertyPath: m_Name
-      value: XR Origin PC
+      value: XROriginPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
