@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc53b2a6797c5429e42876f3f16d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handType: 0
+  handStateType: 0
   handPrefab: {fileID: 890134291}
   hideHandOnSelect: 1
   inputDeviceCharacteristics: 576
@@ -2314,7 +2316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1836622549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,7 +2342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836622548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3301,6 +3303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1bc53b2a6797c5429e42876f3f16d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handType: 0
+  handStateType: 0
   handPrefab: {fileID: 575307560}
   hideHandOnSelect: 1
   inputDeviceCharacteristics: 320

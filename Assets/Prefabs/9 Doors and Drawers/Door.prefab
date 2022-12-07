@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502247348}
   - component: {fileID: 502247349}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoorHandle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 696194816}
   - component: {fileID: 696194817}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoorHandle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 1650220048}
   - component: {fileID: 1650220047}
   - component: {fileID: 1650220046}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: DoorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7621944802314178613}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,6 +402,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 7621944802314178613}
     m_Modifications:
+    - target: {fileID: 1425594968397503937, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402089193145427478, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 4427866358032000170, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
       propertyPath: m_Size.y
       value: 0.7686823
@@ -469,6 +477,14 @@ PrefabInstance:
     - target: {fileID: 6544444022714758158, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
       propertyPath: m_Name
       value: DoorFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544444022714758158, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688950130717295652, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7359526167546223345, guid: 8d79cc157155fde469e81c767af26dfa, type: 3}
       propertyPath: m_Size.x
