@@ -57,6 +57,4 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-[Aa]ssets/Working
-Assets/Working.meta
+/Assets/Working
