@@ -7,6 +7,8 @@ TagManager:
   - Button
   - Teleport
   - Climbable
+  - Magazine
+  - Anchor
   layers:
   - Default
   - TransparentFX
@@ -18,13 +20,13 @@ TagManager:
   - Interactable
   - Interactable Ignore Ray
   - Body
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Hands
+  - Enemy
+  - Neutral
+  - NonInteractable
+  - SubInteractable
+  - Anchor
+  - NonMove
   - 
   - 
   - 

@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_MysteryHouse/Scenes/Build/MainMenu.unity
+    guid: ff6d587176b8cde408aa3c118aede623
+  - enabled: 1
+    path: Assets/_MysteryHouse/Scenes/Test/PlayerTest3.unity
+    guid: 2346c01c55cc80443a087c538e67d60d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5861c8843323b70469ab6e4102e38270, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4afaf9223db5a1e4d97cb3a230314d02, type: 2}

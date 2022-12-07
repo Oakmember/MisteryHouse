@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class FreeCam : MonoBehaviour 
 {
@@ -17,32 +18,44 @@ public class FreeCam : MonoBehaviour
    
 	void Update()
 	{
-        if (Input.GetMouseButton(0))
+        //if (Mouse.current.leftButton.isPressed)
+        //{
+        //    //Cursor.visible = true;
+        //}
+
+        if (Mouse.current.rightButton.isPressed) 
         {
-            //Cursor.visible = true;
-        }
-        
-        if (Input.GetMouseButton(1)) 
-        {
-            float rotX = transform.localEulerAngles.y + (Input.GetAxis("Mouse X") * mouseSensX);
-            rotY += Input.GetAxis("Mouse Y") * mouseSensY;
+            float rotX = transform.localEulerAngles.y + (Mouse.current.delta.x.ReadValue() * mouseSensX);
+            rotY += Mouse.current.delta.y.ReadValue() * mouseSensY;
             rotY = Mathf.Clamp(rotY, -80f, 80f);
             transform.localEulerAngles = new Vector3(-rotY, rotX, 0f);
             //Cursor.visible = false;
         }
-        float forward = Input.GetAxis("Vertical");
-        float side  = Input.GetAxis("Horizontal");
+        float forward = Mouse.current.delta.x.ReadValue(); //Input.GetAxis("Vertical");
+        float side = Mouse.current.delta.y.ReadValue(); //Input.GetAxis("Horizontal");
         if (forward != 0f)  
         {
-            if (Input.GetKey(KeyCode.LeftShift)) speed = speedFast;
-            else speed = speedNormal;
+            if (Keyboard.current[Key.LeftShift].wasPressedThisFrame)
+            {
+                speed = speedFast;
+            }
+            else
+            {
+                speed = speedNormal;
+            }
             Vector3 vect = new Vector3(0f, 0f, forward * speed * Time.deltaTime);
             transform.localPosition += transform.localRotation * vect;
         }
         if (side != 0f) 
         {
-            if (Input.GetKey(KeyCode.LeftShift)) speed = speedFast;
-            else speed = speedNormal;
+            if (Keyboard.current[Key.LeftShift].isPressed)
+            {
+                speed = speedFast;
+            }
+            else
+            {
+                speed = speedNormal;
+            }
             Vector3 vect = new Vector3(side * speed * Time.deltaTime, 0f, 0f);
             transform.localPosition += transform.localRotation * vect;
         }

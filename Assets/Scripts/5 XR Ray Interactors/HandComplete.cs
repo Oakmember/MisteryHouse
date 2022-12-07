@@ -1,10 +1,18 @@
+using Shared;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using static UnityEditor.Rendering.ShadowCascadeGUI;
 
 public class HandComplete : MonoBehaviour
 {
+    [SerializeField]
+    private HandType handType = HandType.None;
+
+    [SerializeField]
+    private HandStateType handStateType = HandStateType.None;
+
     //Stores handPrefab to be Instantiated
     public GameObject handPrefab;
     
@@ -18,16 +26,19 @@ public class HandComplete : MonoBehaviour
     private InputDevice _targetDevice;
     private Animator _handAnimator;
     private SkinnedMeshRenderer _handMesh;
+    private bool isGrabbed = false;
+    private PlayerManager playerManager = null;
 
-    public void HideHandOnSelect()
-    {
-        if (hideHandOnSelect)
-        {
-            _handMesh.enabled = !_handMesh.enabled;
-        }
-    }
+
+
+   
     private void Start()
     {
+        if (PlayerManager.Instance)
+        {
+            playerManager = PlayerManager.Instance;
+        }
+
         InitializeHand();
     }
 
@@ -73,22 +84,59 @@ public class HandComplete : MonoBehaviour
         //This will get the value for our trigger from the target device and output a flaot into triggerValue
         if (_targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
-            _handAnimator.SetFloat("Trigger", triggerValue);
+            _handAnimator.SetFloat(Consts.trigger, triggerValue);
         }
         else
         {
-            _handAnimator.SetFloat("Trigger", 0);
+            _handAnimator.SetFloat(Consts.trigger, 0);
         }
         //This will get the value for our grip from the target device and output a flaot into gripValue
         if (_targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
         {
-            _handAnimator.SetFloat("Grip", gripValue);
+            _handAnimator.SetFloat(Consts.grip, gripValue);
         }
         else
         {
-            _handAnimator.SetFloat("Grip", 0);
+            _handAnimator.SetFloat(Consts.grip, 0);
         }
     }
 
+    public void HideHandOnSelect()
+    {
+        if (hideHandOnSelect)
+        {
+            _handMesh.enabled = !_handMesh.enabled;
+
+           
+        }
+
+        isGrabbed = !isGrabbed;
+        if (isGrabbed)
+        {
+            if (handType == HandType.Left)
+            {
+                playerManager.SetLeftHandState(HandStateType.Grab);
+                handStateType = HandStateType.Grab;
+            }
+            else if (handType == HandType.Right)
+            {
+                playerManager.SetRightHandState(HandStateType.Grab);
+                handStateType = HandStateType.Grab;
+            }
+        }
+        else
+        {
+            if (handType == HandType.Left)
+            {
+                playerManager.SetLeftHandState(HandStateType.Drop);
+                handStateType = HandStateType.Drop;
+            }
+            else if (handType == HandType.Right)
+            {
+                playerManager.SetRightHandState(HandStateType.Drop);
+                handStateType = HandStateType.Drop;
+            }
+        }
+    }
 
 }

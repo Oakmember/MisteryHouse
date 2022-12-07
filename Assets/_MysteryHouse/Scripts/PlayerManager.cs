@@ -1,10 +1,14 @@
+using Shared;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using static UnityEditor.Rendering.ShadowCascadeGUI;
 
 public class PlayerManager : MonoBehaviour
 {
+    public static PlayerManager instance;
+
     [SerializeField]
     private bool isTeleport = false;
 
@@ -17,29 +21,53 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     private GameObject rightTelportingRay = null;
 
+    [SerializeField]
+    private XRPlayerController xrPlayerController = null;
+
+    [SerializeField]
+    private HandStateType handStateTypeLeft = HandStateType.None;
+
+    [SerializeField]
+    private HandStateType handStateTypeRight = HandStateType.None;
+
     private TeleportationProvider teleportationProvider = null;
-    private ActionBasedContinuousMoveProvider actionBasedContinuousMoveProvider = null;
+
+    public static PlayerManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
 
     private void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        instance = this;
+
         teleportationProvider = locomotionSystem.gameObject.GetComponent<TeleportationProvider>();
-        actionBasedContinuousMoveProvider = locomotionSystem.gameObject.GetComponent<ActionBasedContinuousMoveProvider>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        SetTeleport(isTeleport);
-    }
-
-    private void SetTeleport(bool isTeleportParam)
+    public void SetTeleport(bool isTeleportParam)
     {
         teleportationProvider.enabled = isTeleportParam;
-        actionBasedContinuousMoveProvider.enabled = !isTeleportParam;
+        xrPlayerController.IsContinousMoving = !isTeleportParam;
+        xrPlayerController.IsCheckingGround = !isTeleportParam;
 
         leftTelportingRay.SetActive(isTeleportParam);
         rightTelportingRay.SetActive(isTeleportParam);
     }
 
-   
+    public void SetLeftHandState(HandStateType handStateParam)
+    {
+        handStateTypeLeft = handStateParam;
+    }
+
+    public void SetRightHandState(HandStateType handStateParam)
+    {
+        handStateTypeRight = handStateParam;
+    }
 }
