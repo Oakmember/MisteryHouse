@@ -1758,7 +1758,7 @@ GameObject:
   - component: {fileID: 976988958804668154}
   - component: {fileID: 976988959571096028}
   m_Layer: 9
-  m_Name: XR Origin PC
+  m_Name: XROriginPC
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

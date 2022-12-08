@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7925219217620269344}
   - component: {fileID: 7925219217620269345}
   m_Layer: 15
-  m_Name: Teleportation Anchor
+  m_Name: TeleportationAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
