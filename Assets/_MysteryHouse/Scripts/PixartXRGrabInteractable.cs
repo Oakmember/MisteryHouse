@@ -5,6 +5,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PixartXRGrabInteractable : XRGrabInteractable
 {
+    [SerializeField]
+    private Transform leftAttachTransform = null;
+
+    [SerializeField]
+    private Transform rightAttachTransform = null;
 
     [SerializeField]
     private bool isGrabActivated = false;
@@ -14,13 +19,34 @@ public class PixartXRGrabInteractable : XRGrabInteractable
     public bool IsGrabActivated => isGrabActivated;
 
 
-    protected override void Grab()
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
+    {
+        if (args.interactorObject.transform.CompareTag("LeftHand"))
+        {
+            attachTransform = leftAttachTransform;
+        }else if (args.interactorObject.transform.CompareTag("RightHand")) {
+            attachTransform = rightAttachTransform;
+        }
+
+        base.OnSelectEntered(args);
+
+        GrabItem();
+
+    }
+    protected override void OnSelectExited(SelectExitEventArgs args)
+    {
+        base.OnSelectExited(args);
+
+        DropItem();
+    }
+
+    protected void GrabItem()
     {
         if (!isGrabActivated)
         {
             isGrabActivated = true;
 
-            base.Grab();
+            //base.Grab();
 
             PropController propController = gameObject.GetComponent<PropController>();
             if (propController)
@@ -30,11 +56,11 @@ public class PixartXRGrabInteractable : XRGrabInteractable
         }
     }
 
-    protected override void Drop()
+    protected void DropItem()
     {
         isGrabActivated = false;
 
-        base.Drop();
+        //base.Drop();
 
         PropController propController = gameObject.GetComponent<PropController>();
         if (propController)

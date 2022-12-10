@@ -13,6 +13,9 @@ public class PlayerManager : MonoBehaviour
     private bool isTeleport = false;
 
     [SerializeField]
+    private bool isGrabRay = false;
+
+    [SerializeField]
     private LocomotionSystem locomotionSystem = null;
 
     [SerializeField]
@@ -29,6 +32,24 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField]
     private HandStateType handStateTypeRight = HandStateType.None;
+
+    [SerializeField]
+    private GameObject leftGrab = null;
+
+    [SerializeField]
+    private GameObject rightGrab = null;
+
+    [SerializeField]
+    private GameObject leftGrabRay = null;
+
+    [SerializeField]
+    private GameObject rightGrabRay = null;
+
+    [SerializeField]
+    private XRDirectInteractor leftDirectGrab = null;
+
+    [SerializeField]
+    private XRDirectInteractor rightDirectGrab = null;
 
     private TeleportationProvider teleportationProvider = null;
 
@@ -49,6 +70,27 @@ public class PlayerManager : MonoBehaviour
         instance = this;
 
         teleportationProvider = locomotionSystem.gameObject.GetComponent<TeleportationProvider>();
+    }
+
+    private void Start()
+    {
+        SetGrabRay(isGrabRay);
+    }
+
+    //private void Update()
+    //{
+    //    //leftGrabRay.SetActive(leftDirectGrab.interactablesSelected.Count == 0);
+    //    //rightGrabRay.SetActive(rightDirectGrab.interactablesSelected.Count == 0);
+
+
+    //}
+
+    public void SetGrabRay(bool isGrabRayActivedParam)
+    {
+        leftGrabRay.SetActive(isGrabRayActivedParam);
+        rightGrabRay.SetActive(isGrabRayActivedParam);
+        leftGrab.SetActive(!isGrabRayActivedParam);
+        rightGrab.SetActive(!isGrabRayActivedParam);
     }
 
     public void SetTeleport(bool isTeleportParam)

@@ -328,6 +328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3240524871626806228}
   - component: {fileID: 3240524871636401154}
+  - component: {fileID: 2081004228639173300}
   m_Layer: 0
   m_Name: Right Hand Finished
   m_TagString: Untagged
@@ -372,6 +373,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2081004228639173300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3240524871627034548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3321826a65f5eb844bbd9f6bb1727d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handType: 2
+  root: {fileID: 3240524871626806228}
+  animator: {fileID: 3240524871636401154}
+  fingerBones:
+  - {fileID: 3240524871626806244}
+  - {fileID: 3240524871626806250}
+  - {fileID: 3240524871626806248}
+  - {fileID: 3240524871626806252}
+  - {fileID: 3240524871626806258}
+  - {fileID: 3240524871626806256}
+  - {fileID: 3240524871626806260}
+  - {fileID: 3240524871626806266}
+  - {fileID: 3240524871626806264}
+  - {fileID: 3240524871626806270}
+  - {fileID: 3240524871626806210}
+  - {fileID: 3240524871626806208}
+  - {fileID: 3240524871626806214}
+  - {fileID: 3240524871626806218}
+  - {fileID: 3240524871626806216}
+  - {fileID: 3240524871626806222}
 --- !u!1 &3240524871627034550
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,13 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class PixartXRDirectInteractor : XRDirectInteractor
+public class PixartXRRayInteractor : XRRayInteractor
 {
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-
 
         IXRSelectInteractable BaseInteractable = args.interactableObject;
         if (BaseInteractable != null)
@@ -48,5 +47,5 @@ public class PixartXRDirectInteractor : XRDirectInteractor
         }
     }
 
-   
+    
 }

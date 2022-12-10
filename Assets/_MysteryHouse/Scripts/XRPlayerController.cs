@@ -59,6 +59,9 @@ public class XRPlayerController : MonoBehaviour
     private float speed = 10.0f;
 
     [SerializeField]
+    private float sprintFactor = 2.0f;
+
+    [SerializeField]
     private float jumpForce = 250.0f;
 
     [SerializeField]
@@ -75,9 +78,6 @@ public class XRPlayerController : MonoBehaviour
 
     [SerializeField]
     private float capsuleHeight = 1.6f;
-
-    [SerializeField]
-    private float sprintFactor = 2.0f;
 
     private PlayerManager playerManager = null;
 

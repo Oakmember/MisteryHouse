@@ -105,7 +105,7 @@ public class HandComplete : MonoBehaviour
     {
         if (hideHandOnSelect)
         {
-            _handMesh.enabled = !_handMesh.enabled;
+            //_handMesh.enabled = !_handMesh.enabled;
 
            
         }
