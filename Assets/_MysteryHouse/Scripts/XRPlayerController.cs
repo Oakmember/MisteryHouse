@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.XR.CoreUtils;
+using UnityEditor;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -42,9 +43,19 @@ public class XRPlayerController : MonoBehaviour
         set => moveActionProperty = value;
     }
 
+    [SerializeField]
+    InputActionProperty menuActionProperty;
+
+    public InputActionProperty MenuActionProperty
+    {
+        get => menuActionProperty;
+        set => menuActionProperty = value;
+    }
+
     private InputAction runInputAction;
     private InputAction jumpInputAction;
     private InputAction moveInputAction;
+    private InputAction menuInputAction;
 
     [SerializeField]
     private LayerMask groundLayer;
@@ -78,6 +89,15 @@ public class XRPlayerController : MonoBehaviour
 
     [SerializeField]
     private float capsuleHeight = 1.6f;
+
+    [SerializeField]
+    private GameObject menu = null;
+
+    [SerializeField]
+    private Transform head = null;
+
+    [SerializeField]
+    private float spawnDistance = 2.0f;
 
     private PlayerManager playerManager = null;
 
@@ -121,10 +141,22 @@ public class XRPlayerController : MonoBehaviour
         runInputAction = runActionProperty.action;
         moveInputAction = moveActionProperty.action;
         jumpInputAction = jumpActionProperty.action;
+        menuInputAction = menuActionProperty.action;
 
         runInputAction.performed += OnRun;
         runInputAction.canceled += OnRun;
         jumpInputAction.performed += OnJump;
+        menuInputAction.performed += OnMenu;
+    }
+
+    private void OnMenu(InputAction.CallbackContext obj)
+    {
+        if (!menu) return;
+
+        menu.SetActive(!menu.activeSelf);
+        menu.transform.position = head.position + new Vector3(head.forward.x, 0, head.forward.z).normalized * spawnDistance;
+        menu.transform.LookAt(new Vector3(head.position.x, menu.transform.position.y, head.position.z));
+        menu.transform.forward *= -1;
     }
 
     private void OnRun(InputAction.CallbackContext obj)
@@ -272,5 +304,6 @@ public class XRPlayerController : MonoBehaviour
         runInputAction.performed -= OnRun;
         runInputAction.canceled -= OnRun;
         jumpInputAction.performed -= OnJump;
+        menuInputAction.performed -= OnMenu;
     }
 }
