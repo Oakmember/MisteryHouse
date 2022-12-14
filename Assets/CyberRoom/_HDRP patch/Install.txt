@@ -1,3 +1,0 @@
-Install:
-- double click 'CyberRoomHDRP_'
-- install hdrp: Window > Package Manager > hdrp 
