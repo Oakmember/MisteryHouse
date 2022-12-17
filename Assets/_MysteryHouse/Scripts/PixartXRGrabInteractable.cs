@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.Events;
 
 public class PixartXRGrabInteractable : XRGrabInteractable
 {
+    public UnityEvent OnGrabEvent;
+    public UnityEvent OnDropEvent;
+
     [SerializeField]
     private Transform leftAttachTransform = null;
 
@@ -54,6 +58,8 @@ public class PixartXRGrabInteractable : XRGrabInteractable
                 propController.Event_SetLayerNonInteractable();
             }
         }
+
+        OnGrabEvent.Invoke();
     }
 
     protected void DropItem()
@@ -67,6 +73,8 @@ public class PixartXRGrabInteractable : XRGrabInteractable
         {
             propController.Event_SetLayerInteractable();
         }
+
+        OnDropEvent.Invoke();
     }
 
 }

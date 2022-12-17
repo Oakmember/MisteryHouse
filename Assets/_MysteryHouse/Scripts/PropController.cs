@@ -1,3 +1,4 @@
+using _BioMinds.Scripts.Data;
 using Shared;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,15 +9,14 @@ public class PropController : MonoBehaviour
     [SerializeField]
     private PropStateType propStateType = PropStateType.None;
 
-  
+    [SerializeField]
+    private QuestSettings QuestSettings = null;
 
     public PropStateType PropStateType
     {
         get => propStateType;
         set => propStateType = value; 
     }
-
-  
 
     void Start()
     {
