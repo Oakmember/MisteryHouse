@@ -1,5 +1,4 @@
-﻿using HurricaneVR.Framework.Components;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
