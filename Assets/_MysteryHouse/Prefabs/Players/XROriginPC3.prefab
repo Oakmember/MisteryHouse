@@ -41,7 +41,7 @@ Transform:
   - {fileID: 3735750912316596159}
   - {fileID: 3735750911161561110}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1473670596442955130
 MonoBehaviour:
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTeleport: 1
-  isGrabRay: 1
+  isGrabRay: 0
   locomotionSystem: {fileID: 3086183185261053106}
   leftTelportingRay: {fileID: 3086183183942543984}
   rightTelportingRay: {fileID: 3086183184886104163}
@@ -3613,7 +3613,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4951,7 +4951,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5581,6 +5581,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Left Hand Finished
       objectReference: {fileID: 0}
+    - target: {fileID: 7072478885645355747, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072478885645355747, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
+      propertyPath: m_TagString
+      value: LeftHand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
@@ -5594,6 +5602,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7072478885645355679, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
   m_PrefabInstance: {fileID: 3086183183724180396}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5256313546211227983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7072478885645355747, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
+  m_PrefabInstance: {fileID: 3086183183724180396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1108114772
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5256313546211227983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.01
+  m_Direction: 0
+  m_Center: {x: -0.02, y: 0, z: 0}
 --- !u!1001 &3086183184269569458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5650,6 +5677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Hand Finished
       objectReference: {fileID: 0}
+    - target: {fileID: 3240524871627034568, guid: 0c3962d09c340f747af2bf4d35e30c19, type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3962d09c340f747af2bf4d35e30c19, type: 3}
@@ -5663,6 +5694,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3240524871627034548, guid: 0c3962d09c340f747af2bf4d35e30c19, type: 3}
   m_PrefabInstance: {fileID: 3086183184269569458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &445006932815520378 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3240524871627034568, guid: 0c3962d09c340f747af2bf4d35e30c19, type: 3}
+  m_PrefabInstance: {fileID: 3086183184269569458}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1272145389
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445006932815520378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.01
+  m_Direction: 0
+  m_Center: {x: 0.02, y: 0, z: 0}
 --- !u!1001 &3735750910579055239
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ TagManager:
   - Climbable
   - Magazine
   - Anchor
+  - LeftHand
+  - RightHand
   layers:
   - Default
   - TransparentFX
@@ -27,8 +29,8 @@ TagManager:
   - SubInteractable
   - Anchor
   - NonMove
-  - 
-  - 
+  - Touchable
+  - Fingers
   - 
   - 
   - 
