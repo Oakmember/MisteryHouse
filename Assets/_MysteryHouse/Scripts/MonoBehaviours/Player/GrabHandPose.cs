@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEditor.ShortcutManagement;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -124,12 +125,23 @@ public class GrabHandPose : MonoBehaviour
 
 #if UNITY_EDITOR
 
-    [MenuItem("Tools/Mirror Selected Right Grab Pose")]
+    
+    //[Shortcut("Tools/Mirror Selected Right Hand Pose To Left Hand Pose", KeyCode.Alpha1)]
+    [MenuItem("Tools/Mirror Selected Right Hand Pose To Left Hand Pose")]
     public static void MirrorRightPose()
     {
         Debug.Log("Mirror Right Pose");
         GrabHandPose handPose = Selection.activeGameObject.GetComponent<GrabHandPose>();
         handPose.MirrorPose(handPose.leftHandPose, handPose.rightHandPose);
+    }
+
+    //[Shortcut("Tools/Mirror Selected Right Hand Pose To Left Hand Pose", KeyCode.Alpha2)]
+    [MenuItem("Tools/Mirror Selected Left Hand Pose To Right Hand Pose")]
+    public static void MirrorLeftPose()
+    {
+        Debug.Log("Mirror Left Pose");
+        GrabHandPose handPose = Selection.activeGameObject.GetComponent<GrabHandPose>();
+        handPose.MirrorPose(handPose.rightHandPose, handPose.leftHandPose);
     }
 #endif
 
