@@ -29,16 +29,20 @@ public class HandComplete : MonoBehaviour
     private bool isGrabbed = false;
     private PlayerManager playerManager = null;
 
+    private Animator animator = null;
 
+    private void Awake()
+    {
+        animator = gameObject.GetComponentInChildren<Animator>();
+    }
 
-   
     private void Start()
     {
         if (PlayerManager.Instance)
         {
             playerManager = PlayerManager.Instance;
         }
-
+        
         InitializeHand();
     }
 
@@ -137,6 +141,11 @@ public class HandComplete : MonoBehaviour
                 handStateType = HandStateType.Drop;
             }
         }
+    }
+
+    public void SetPressAnim(bool isEnabledParam)
+    {
+        animator.SetBool("IsPressed", isEnabledParam);
     }
 
 }

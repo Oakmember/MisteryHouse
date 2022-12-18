@@ -2954,6 +2954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleportation Area
       objectReference: {fileID: 0}
+    - target: {fileID: 538438831399758886, guid: 338cd1718fb4e3b44a04f28a1e5e0770, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 338cd1718fb4e3b44a04f28a1e5e0770, type: 3}

@@ -15,6 +15,8 @@ namespace Shared
         public const string defaultLayer = "Default";
         public const string nonMoveLayer = "NonMove";
         public const string playerTag = "Player";
+        public const string leftHandTag = "LeftHand";
+        public const string rightHandTag = "RightHand";
     }
 
 }
