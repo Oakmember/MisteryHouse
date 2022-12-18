@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class canvasLayerMove : MonoBehaviour
+public class CanvasLayerMove : MonoBehaviour
 {
 
     public Transform _trackedObject;
