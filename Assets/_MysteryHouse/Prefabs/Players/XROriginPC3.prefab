@@ -41,7 +41,7 @@ Transform:
   - {fileID: 3735750912316596159}
   - {fileID: 3735750911161561110}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1473670596442955130
 MonoBehaviour:
@@ -5435,19 +5435,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1426297468853571409, guid: 63287ef1240c1744ea9fee9ce43c5fea, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1426297468853571409, guid: 63287ef1240c1744ea9fee9ce43c5fea, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1426297468853571409, guid: 63287ef1240c1744ea9fee9ce43c5fea, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 78.815
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1426297468853571409, guid: 63287ef1240c1744ea9fee9ce43c5fea, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.615
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3966394906819474756, guid: 63287ef1240c1744ea9fee9ce43c5fea, type: 3}
       propertyPath: m_Name
@@ -5515,7 +5515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6940479346653523313, guid: 63287ef1240c1744ea9fee9ce43c5fea, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

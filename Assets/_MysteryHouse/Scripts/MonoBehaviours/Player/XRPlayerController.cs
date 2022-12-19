@@ -52,10 +52,20 @@ public class XRPlayerController : MonoBehaviour
         set => menuActionProperty = value;
     }
 
+    [SerializeField]
+    InputActionProperty hudActionProperty;
+
+    public InputActionProperty HUDActionProperty
+    {
+        get => hudActionProperty;
+        set => hudActionProperty = value;
+    }
+
     private InputAction runInputAction;
     private InputAction jumpInputAction;
     private InputAction moveInputAction;
     private InputAction menuInputAction;
+    private InputAction hudInputAction;
 
     [SerializeField]
     private LayerMask groundLayer;
@@ -92,6 +102,9 @@ public class XRPlayerController : MonoBehaviour
 
     [SerializeField]
     private GameObject menu = null;
+
+    [SerializeField]
+    private GameObject hud = null;
 
     [SerializeField]
     private Transform head = null;
@@ -142,11 +155,21 @@ public class XRPlayerController : MonoBehaviour
         moveInputAction = moveActionProperty.action;
         jumpInputAction = jumpActionProperty.action;
         menuInputAction = menuActionProperty.action;
+        hudInputAction = hudActionProperty.action;
 
         runInputAction.performed += OnRun;
         runInputAction.canceled += OnRun;
         jumpInputAction.performed += OnJump;
         menuInputAction.performed += OnMenu;
+        hudInputAction.performed += OnHUD;
+    }
+
+    private void OnHUD(InputAction.CallbackContext obj)
+    {
+        if (!hud) return;
+
+        hud.SetActive(!hud.activeSelf);
+
     }
 
     private void OnMenu(InputAction.CallbackContext obj)
@@ -305,5 +328,6 @@ public class XRPlayerController : MonoBehaviour
         runInputAction.canceled -= OnRun;
         jumpInputAction.performed -= OnJump;
         menuInputAction.performed -= OnMenu;
+        hudInputAction.performed -= OnHUD;
     }
 }

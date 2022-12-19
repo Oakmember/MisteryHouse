@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502247348}
   - component: {fileID: 502247349}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoorHandle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 696194816}
   - component: {fileID: 696194817}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoorHandle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7621944802314178613}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ Transform:
   - {fileID: 7040993568447488365}
   - {fileID: 4453592670243906432}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1848467335
 PrefabInstance:

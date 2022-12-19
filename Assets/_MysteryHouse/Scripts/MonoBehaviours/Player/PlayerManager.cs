@@ -51,7 +51,17 @@ public class PlayerManager : MonoBehaviour
     [SerializeField]
     private XRDirectInteractor rightDirectGrab = null;
 
+    [SerializeField]
+    private int maxHealth = 100;
+
+    [SerializeField]
+    private HUDManager hudManager = null;
+
+    private int currentHealth = 0;
+
     private TeleportationProvider teleportationProvider = null;
+
+    public float CurrentHealth => currentHealth;
 
     public static PlayerManager Instance
     {
@@ -68,12 +78,14 @@ public class PlayerManager : MonoBehaviour
             Destroy(this.gameObject);
         }
         instance = this;
-
+        currentHealth = maxHealth;
         teleportationProvider = locomotionSystem.gameObject.GetComponent<TeleportationProvider>();
     }
 
     private void Start()
     {
+        InitializePlayerHealth();
+
         SetGrabRay(isGrabRay);
     }
 
@@ -111,5 +123,60 @@ public class PlayerManager : MonoBehaviour
     public void SetRightHandState(HandStateType handStateParam)
     {
         handStateTypeRight = handStateParam;
+    }
+
+    public void InitializePlayerHealth()
+    {
+        hudManager.InitializeHealthBar(currentHealth);
+    }
+
+    public void SetPlayerHeal(int healParam)
+    {
+        if (IsHealthBelowHundred()) 
+        {
+            currentHealth += healParam;
+            hudManager.onSetHealthBar(currentHealth);
+        }
+    }
+
+    public void SetPlayerDamage(int damageParam)
+    {
+        if (IsHealthAboveZero())
+        {
+            currentHealth -= damageParam;
+            hudManager.onSetHealthBar(currentHealth);
+        }
+    }
+
+    private bool IsHealthAboveZero()
+    {
+        bool healthCanBeChanged = true;
+
+        if (currentHealth < 0)
+        {
+            currentHealth = 0;
+            healthCanBeChanged = false;
+            Death();
+        }
+
+        return healthCanBeChanged;
+    }
+
+    private bool IsHealthBelowHundred()
+    {
+        bool healthCanBeChanged = true;
+
+        if (currentHealth >= 100)
+        {
+            currentHealth = 100;
+            healthCanBeChanged = false;
+        }
+
+        return healthCanBeChanged;
+    }
+
+    private void Death()
+    {
+        Debug.Log("You are dead!");
     }
 }
