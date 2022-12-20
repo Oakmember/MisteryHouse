@@ -121,7 +121,7 @@ public class XRPlayerController : MonoBehaviour
     private CapsuleCollider capsuleCollider = null;
     private List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>();
 
-    private CharacterController character = null;
+    private CharacterController characterController = null;
     private XROrigin rig = null;
     private float fallingSpeed = 0;
     private float gravity = 10.0f;
@@ -144,7 +144,8 @@ public class XRPlayerController : MonoBehaviour
 
     private void Awake()
     {
-        character = gameObject.GetComponent<CharacterController>();
+        characterController = gameObject.GetComponent<CharacterController>();
+        capsuleCollider = gameObject.GetComponent<CapsuleCollider>();
         rig = gameObject.GetComponent<XROrigin>();
         rigidbodyComponent = gameObject.GetComponent<Rigidbody>();
     }
@@ -240,7 +241,7 @@ public class XRPlayerController : MonoBehaviour
 
         Quaternion headYaw = Quaternion.Euler(0, rig.Camera.gameObject.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(xAxis, 0.0f, zAxis);
-        character.Move(direction * speed * Time.deltaTime);
+        characterController.Move(direction * speed * Time.deltaTime);
 
         if (CheckIfGrounded(groundLayer))
         {
@@ -251,22 +252,22 @@ public class XRPlayerController : MonoBehaviour
             fallingSpeed += gravity * Time.fixedDeltaTime;
         }
 
-        character.Move(Vector3.down * fallingSpeed * Time.fixedDeltaTime);
+        characterController.Move(Vector3.down * fallingSpeed * Time.fixedDeltaTime);
     }
 
     private bool CheckIfGrounded(LayerMask groundlayerParam)
     {
-        Vector3 rayStart = transform.TransformPoint(character.center);
-        float rayLength = character.center.y + 0.01f;
-        bool hasHit = Physics.SphereCast(rayStart, character.radius, Vector3.down, out RaycastHit hitInfo, rayLength, groundlayerParam);
+        Vector3 rayStart = transform.TransformPoint(characterController.center);
+        float rayLength = characterController.center.y + 0.01f;
+        bool hasHit = Physics.SphereCast(rayStart, characterController.radius, Vector3.down, out RaycastHit hitInfo, rayLength, groundlayerParam);
         return hasHit;
     }
 
     private int CheckWhatLayer()
     {
-        Vector3 rayStart = transform.TransformPoint(character.center + new Vector3(0,0,1));
-        float rayLength = character.center.y + 0.01f;
-        bool hasHit = Physics.SphereCast(rayStart, character.radius, Vector3.down, out RaycastHit hitInfo, rayLength);
+        Vector3 rayStart = transform.TransformPoint(characterController.center + new Vector3(0,0,1));
+        float rayLength = characterController.center.y + 0.01f;
+        bool hasHit = Physics.SphereCast(rayStart, characterController.radius, Vector3.down, out RaycastHit hitInfo, rayLength);
         //Debug.Log(hitInfo.transform.gameObject.layer);
         if (!hasHit) return -1;
         GameObject hitGameObject = hitInfo.transform.gameObject;
@@ -277,9 +278,11 @@ public class XRPlayerController : MonoBehaviour
 
     private void CapsuleFollowHeadset()
     {
-        character.height = rig.CameraInOriginSpaceHeight + heightOffset;
+        characterController.height = rig.CameraInOriginSpaceHeight + heightOffset;
+        capsuleCollider.height = rig.CameraInOriginSpaceHeight + heightOffset;
         Vector3 capsuleCenter = transform.InverseTransformPoint(rig.Camera.gameObject.transform.position);
-        character.center = new Vector3(capsuleCenter.x, character.height / 2 + character.skinWidth, capsuleCenter.z);
+        characterController.center = new Vector3(capsuleCenter.x, characterController.height / 2 + characterController.skinWidth, capsuleCenter.z);
+        capsuleCollider.center = new Vector3(capsuleCenter.x, characterController.height / 2 + characterController.skinWidth, capsuleCenter.z);
     }
 
     void Update()
