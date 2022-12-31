@@ -2,10 +2,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class WristUI : MonoBehaviour
 {
-    public InputActionAsset inputActions;
+    [SerializeField]
+    private InputActionAsset inputActions = null;
 
-    private Canvas _wristUICanvas;
-    private InputAction _menu;
+    private Canvas _wristUICanvas = null;
+    private InputAction _menu = null;
+
+
     private void Start()
     {
         _wristUICanvas = GetComponent<Canvas>();
