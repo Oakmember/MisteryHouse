@@ -301,10 +301,10 @@ public class XRPlayerController : MonoBehaviour
     private void CapsuleFollowHeadset()
     {
         characterController.height = rig.CameraInOriginSpaceHeight + heightOffset;
-        capsuleCollider.height = rig.CameraInOriginSpaceHeight + heightOffset;
+        //capsuleCollider.height = rig.CameraInOriginSpaceHeight + heightOffset;
         Vector3 capsuleCenter = transform.InverseTransformPoint(rig.Camera.gameObject.transform.position);
         characterController.center = new Vector3(capsuleCenter.x, characterController.height / 2 + characterController.skinWidth, capsuleCenter.z);
-        capsuleCollider.center = new Vector3(capsuleCenter.x, characterController.height / 2 + characterController.skinWidth, capsuleCenter.z);
+        //capsuleCollider.center = new Vector3(capsuleCenter.x, characterController.height / 2 + characterController.skinWidth, capsuleCenter.z);
     }
 
     void Update()

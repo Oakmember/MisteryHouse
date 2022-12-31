@@ -389,7 +389,7 @@ MonoBehaviour:
   nonMoveLayer:
     serializedVersion: 2
     m_Bits: 65536
-  speed: 5
+  speed: 2
   sprintFactor: 2
   jumpForce: 150
   controllerNode: 4

@@ -3332,6 +3332,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3086183184300855439, guid: 04fe4b79d96522b4d8e4d68cc08787b8, type: 3}
+      propertyPath: m_Height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086183184300855439, guid: 04fe4b79d96522b4d8e4d68cc08787b8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3086183184300855439, guid: 04fe4b79d96522b4d8e4d68cc08787b8, type: 3}
+      propertyPath: m_Center.y
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3086183185167945641, guid: 04fe4b79d96522b4d8e4d68cc08787b8, type: 3}
       propertyPath: wristMenuActionProperty.m_Action.m_Id
       value: 1122c5ae-6a86-488c-b0f4-15289f6e13cf
